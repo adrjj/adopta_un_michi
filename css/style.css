@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: lato;
+}
+
+body {
+    background-color: #03001C;
+}
+
+main {
+    background-color: #BAD7E9;
+
+}
+
+header {
+    box-shadow: 0rem 0.2rem 0.3rem #151231;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: aliceblue;
+    text-shadow: 0rem 0rem 0.7rem #16e198;
+}
+
+.menu li a:hover {
+    color: #16E198;
+
+}
+
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    flex-wrap: wrap;
+}
+
+/*------------MAIN---------------*/
+
+.main-index{
+    background-color: #03001c;
+}
+
+
+.intro {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 5rem;
+}
+
+.intro a {
+    text-decoration: none;
+    color: #03001C;
+    background-color: #16E198;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.intro p {
+width: 15rem;
+    color: aliceblue;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.portada {
+    width: 100%;
+    height: 35rem;
+    background-image: url(../assets/img/portada.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.prueba{
+    display: flex;
+    height: 50rem;
+    flex-direction: column;
+}
+
+.portada h1 {
+    color: aliceblue;
+    font-size: 6rem;
+ 
+}
+.cont-banner{
+    display: flex;
+    justify-content: center;
+}
+.banner {
+ 
+    display: flex;
+    align-items: center;
+    height: 20rem;
+}
+
+.bajada {
+    color: #16E198;
+    text-align: center;
+    background-color: #210d41;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 4rem 0 1rem 0;
+}
+
+/*------------SECTION MICHIS---------------*/
+
+.michis {
+    padding: 2rem 0 3rem 0;
+    background-color: #210d41;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: 320px;
+    height: 650px;
+    background-color: #151231;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    color: #FBF7F6;
+    font-size: 2rem;
+}
+
+.card p {
+    color: aliceblue;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #03001C;
+    background-color: #16E198;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*------------FOOTER---------------*/
+footer {
+    height: 5rem;
+    background-color: #301E67;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.footer-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.redes {
+    display: flex;
+    gap: 3rem;
+}
+
+.icono1 {
+    color: #16E198;
+    font-size: 1.5rem;
+}
+
+.linea {
+    background-color: #16E198;
+    width: 40%;
+    height: 0.1rem;
+}
+
+/*------------html PUBLICAR---------------*/
+
+.publicar {
+    background-color: #BAD7E9;
+    display: flex;
+
+    padding: 3rem 0.5rem 1rem 0.5rem;
+
+
+}
+
+.cont-img {
+    width: 50%;
+    height: auto;
+    padding-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-img img {
+    width: 50%;
+}
+
+.publicar h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: aliceblue;
+}
+
+.publicar p {
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.info-publ {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    align-items: center;
+    grid-row-gap: 1rem;
+}
+
+.info-publ a {
+    text-decoration: none;
+    color: #03001C;
+    background-color: #16E198;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*------------html DONACIONES---------------*/
+.donar {
+    background-color: #CCE9BA;
+    display: flex;
+}
+
+.donar img {
+    width: 30%;
+    height: auto;
+}
+
+.donar h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    color: #441e67;
+}
+
+.donar p {
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.info-donar {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    gap: 1rem;
+}
+
+.info-donar a {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #e6575e;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*------------html REFUGIOS---------------*/
+
+
+main .titulo-refugio {
+    text-align: center;
+    color: #441e67;
+    padding-top: 1rem;
+    font-weight: 300;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    
+
+}
+
+.refugios {
+    background-color: #BAD7E9;
+    display: flex;
+    align-items: center;
+  padding-bottom: 3rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card-refu {
+    width: 320px;
+    height: 350px;
+    background-color: rgb(216, 217, 218);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0.5rem 0.5rem 0.5rem #413e45b8;
+
+}
+
+.card-refu p {
+    padding: 0 10px 0 10px;
+}
+
+.card-refu h3 {
+    background-color: #e6575e;
+    text-align: center;
+    color: aliceblue;
+    width: 100%;
+}
+
+.card-refu h3 {
+    background-color: #e6575e;
+    padding: 0.5rem;
+}
+
+.lourders h3 {
+    background-color: #C045EB
+    
+}
+
+.fun-gatitos h3 {
+    background-color: #8E45EB;
+    padding: 0.5rem;
+}
+
+.bicho h3 {
+    background-color: #456AEB;
+    padding: 0.5rem;
+}
+
+.web {
+    background-color: #e6575e;
+    text-align: center;
+    color: aliceblue;
+    padding: 0.3rem .5rem 0.3rem 0.5rem;
+    border-radius: 15px;
+    width: 70%;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #410d2bb8;
+}
+
+.web-a {
+    background-color: #C045EB;
+    text-align: center;
+    color: aliceblue;
+    padding: 0.3rem .5rem 0.3rem 0.5rem;
+    border-radius: 15px;
+    width: 90%;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8;
+}
+
+.web-b {
+    background-color: #8E45EB;
+    text-align: center;
+    color: aliceblue;
+    padding: 0.3rem .5rem 0.3rem 0.5rem;
+    border-radius: 15px;
+    width: 80%;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8;
+}
+
+.web-c {
+    background-color: #456AEB;
+    text-align: center;
+    color: aliceblue;
+    padding: 0.3rem .5rem 0.3rem 0.5rem;
+    border-radius: 15px;
+    width: 60%;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #0d0f41b8;
+}
+
+.refu-redes .icono1 {
+    color: #301E67;
+}
+
+/*------------html CONTACTO---------------*/
+
+.cont-form h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #C045EB;
+    margin-bottom: 1rem;
+
+}
+
+.cont-form {
+    width: 35%;
+}
+
+.contacto {
+    background-color: #FBF7F6;
+    display: flex;
+
+}
+
+.contacto img {
+    transform: scaleX(-1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    text-align: center;
+    border-style: none;
+    border-bottom: 2px solid #C045EB;
+    font-size: 1rem;
+    color: #c045eb;
+    background-color: #FBF7F6;
+}
+
+::placeholder {
+    color: #b9b9b9;
+
+}
+
+.cont-Nom-ape {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: none;
+}
+
+.contacto textarea {
+
+    border-style: none;
+    border: 2px solid #C045EB;
+    border-radius: 1.5rem;
+    text-align: center;
+    width: 30rem;
+    height: 10rem;
+    font-size: 1rem;
+    color: #c045eb;
+    background-color: #FBF7F6;
+}
+
+button {
+    background-color: #C045EB;
+    border: 0;
+    width: 8rem;
+    padding: 0.5rem;
+    color: aliceblue;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8;
+}
+
+.con-btn {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*------------html CATALOGO GRID---------------*/
+.main-catalogo {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3c206b+17,210d41+75 */
+    background: rgb(60, 32, 107);
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(60, 32, 107, 1) 17%, rgba(33, 13, 65, 1) 75%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(60, 32, 107, 1) 17%, rgba(33, 13, 65, 1) 75%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(60, 32, 107, 1) 17%, rgba(33, 13, 65, 1) 75%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c206b', endColorstr='#210d41', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+
+}
+
+.main-catalogo h1 {
+    color: #FBF7F6;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 3rem;
+    margin-bottom: 10rem;
+}
+
+.catalogo {
+    display: grid;
+    grid-gap: 5rem 10rem;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+        "peques peques"
+        "puma  colorido"
+        "pomposo tigre"
+        "empoderado sofisticado";
+}
+
+.catalogo img {
+    width: 100%;
+}
+
+.peques {
+    grid-area: peques;
+
+}
+
+.peques img {
+    width: 200%;
+}
+
+.puma {
+    grid-area: puma;
+}
+
+.colorido {
+    grid-area: colorido;
+}
+
+.colorido img {
+    width: 85%;
+}
+
+.pomposo {
+    grid-area: pomposo;
+}
+
+.pomposo img {
+    width: 130%;
+}
+
+.tigre {
+    grid-area: tigre;
+}
+
+.tigre img {
+    width: 90%;
+}
+
+.empoderado {
+    grid-area: empoderado;
+}
+
+.empoderado img {
+    width: 110%;
+}
+
+.sofisticado {
+    grid-area: sofisticado;
+}
+
+.sofisticado img {
+    width: 130%;
+}
+
+.catalogo a {
+    width: 300px;
+    height: 500px;
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+
+.catalogo h4 {
+    font-size: 2rem;
+}
+
+/* ----------------------------------------pantalla 768px -----------------------------*/
+
+
+
+
+@media (max-width:768px) {
+    /*------------INDEX-----------------------------------*/
+.main-index{
+    padding-top: 2rem;
+}
+.portada h1 {
+    font-size: 4rem;
+
+}
+.intro {
+   
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.intro a {
+    font-size: .8rem;
+    padding: 5px;
+}
+.michis´{
+    padding: 2rem 0.5rem 3rem 0.5rem;
+}
+.michis .card{
+    width: 300px;
+    height: 575px;
+
+}
+.michis .card img{
+    width: 85%;
+}
+.bajada {
+    padding: 2rem 0 1rem 0;
+}
+.banner {
+    height: 35rem;
+
+}
+
+/*------------FOOTER--------------*/
+footer {
+    height: 4rem;
+}
+
+.linea {
+    width: 30%;
+}
+
+/*------------PUBLICAR--------------*/
+    .publicar h1 {
+        font-size: 3rem;
+    }
+
+    .publicar p {
+        font-size: 1rem;
+    }
+
+    .cont-img img {
+        width: 80%;
+    }
+
+
+
+    /*------------CONTACTO--------------*/
+    .contacto img {
+        display: none;
+    }
+
+    .cont-Nom-ape {
+        justify-content: space-around;
+    }
+
+    .cont-form h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .cont-form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 2rem 1rem 6rem 1rem;
+        flex-direction: column;
+
+    }
+
+    button {
+        font-weight: 900;
+        font-size: medium;
+    }
+/*------------REFUGIOS--------------*/
+    main .titulo-refugio{
+        font-size: 3rem;
+       
+    }
+/*------------CATALOGO--------------*/
+    .catalogo {
+        display: grid;
+        grid-gap: 3rem 7rem;
+        justify-content: center;
+        justify-items: center;
+        grid-template-areas:
+            "peques peques"
+            "puma  colorido"
+            "pomposo tigre"
+            "empoderado sofisticado";
+    }
+
+
+  
+ 
+    
+    .peques img {
+        width: 180%;
+    }
+    
+  
+    
+    .puma img{
+        width: 80%;
+    }
+    
+    .colorido img {
+        width: 65%;
+    }
+    
+   
+    
+    .pomposo img {
+        width: 110%;
+    }
+    
+   
+    
+    .tigre img {
+        width: 70%;
+    }
+    
+  
+    .empoderado img {
+        width: 90%;
+    }
+    
+   
+    .sofisticado img {
+        width: 110%;
+    }
+
+}
+/* --------------------------------------pantalla 320px ----------------------------*/
+
+@media (max-width:320px) {
+   /*------------INDEX--------------*/
+
+header{
+    background-color: #16E198;
+}
+.menu li a{
+    color:#441e67;
+    font-weight: bold;
+}
+.intro{
+    padding: 1rem 0rem 2rem 0;
+}
+.michis .card a{
+    padding: 7px;
+}
+.portada{
+    background-size:contain;
+    height: 26rem;
+}
+.portada h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+.banner{
+    align-items: flex-start;
+}
+.bajada{
+font-size: 2rem;
+}
+    /*------------FOOTER--------------*/
+    footer {
+        height: 3rem;
+    }
+
+    .linea {
+        width: 20%;
+    }
+
+    .redes {
+        gap: 2rem;
+    }
+
+    /*------------PUBLICAR--------------*/
+    .publicar {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .cont-img {
+        width: 100%;
+        justify-content: normal;
+    }
+
+    .info-publ {
+        width: 17rem;
+        margin-bottom: 2rem;
+    }
+
+    .publicar h1 {
+        text-align: center;
+    }
+
+    .info-publ p {
+        text-align: justify;
+    }
+
+    /*------------CONTACTO--------------*/
+
+    .contacto textarea {
+        width: 18rem;
+
+    }
+
+    .cont-Nom-ape {
+
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    /*------------REFUGIOS--------------*/
+    .card-refu{
+        width: 300px;
+    }
+
+ /*------------CATALOGO--------------*/
+    .catalogo {
+        grid-gap: 1rem 1rem;
+        grid-template-areas:
+            "peques"
+            "puma"  
+            "colorido"
+            "pomposo"
+            "tigre"
+            "empoderado" 
+            "sofisticado";
+    }
+.catalogo a {
+
+    height: 350px;
+}
+.main-catalogo h1 {
+    
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+    .peques img {
+        width: 110%;
+    }
+    
+  
+    
+    .puma img{
+        width: 60%;
+    }
+    
+    .colorido img {
+        width: 45%;
+    }
+    
+   
+    
+    .pomposo img {
+        width: 90%;
+    }
+    
+   
+    
+    .tigre img {
+        width: 50%;
+    }
+    
+  
+    .empoderado img {
+        width: 70%;
+    }
+    
+   
+    .sofisticado img {
+        width: 90%;
+    }
+
+}

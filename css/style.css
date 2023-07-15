@@ -605,13 +605,29 @@ button {
     font-size: 2rem;
 }
 
+/* ----------------------------------------pantalla 1200px -----------------------------*/
+  /*------------INDEX-----------------------------------*/
+@media(max-width:1200px){
+    .portada h1 {
+        font-size: 4rem;
+    
+    }
+
+    .intro { 
+   
+        align-items: center;
+        padding: 1rem 0rem;
+    }
+    .banner {
+        height: 35rem;
+    
+    }
+
+}
+
 /* ----------------------------------------pantalla 768px -----------------------------*/
-
-
-
-
 @media (max-width:768px) {
-    /*------------INDEX-----------------------------------*/
+  
 .main-index{
     padding-top: 2rem;
 }
@@ -629,7 +645,7 @@ button {
     font-size: .8rem;
     padding: 5px;
 }
-.michis´{
+.michis{
     padding: 2rem 0.5rem 3rem 0.5rem;
 }
 .michis .card{
@@ -758,7 +774,57 @@ footer {
     }
 
 }
+/* ----------------------------------------pantalla 600px -----------------------------*/
+    /*------------INDEX-----------------------------------*/
+@media(max-width:600px){
+
+    .portada h1 {
+    text-align: center;
+    }
+    .banner {
+    height: 37rem;
+    }
+}
+/* --------------------------------------pantalla 680px ----------------------------*/
+
+@media (max-width:680px){
+ /*------------CATALOGO--------------*/
+ .catalogo{
+    grid-gap: 3rem 1rem;
+ }
+ .empoderado img {
+    width: 70%;
+}
+.sofisticado img {
+    width: 90%;
+}
+.catalogo a {
+    width: 200px;
+    height: 334px;}
+
+    .catalogo h4 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}
+/* --------------------------------------pantalla 400px ----------------------------*/
+@media(max-width:400px){
+    .catalogo {
+        grid-gap: 1rem 1rem;
+        grid-template-areas:
+            "peques"
+            "puma"  
+            "colorido"
+            "pomposo"
+            "tigre"
+            "empoderado" 
+            "sofisticado";
+    }
+}
+
 /* --------------------------------------pantalla 320px ----------------------------*/
+
 
 @media (max-width:320px) {
    /*------------INDEX--------------*/
@@ -859,6 +925,7 @@ font-size: 2rem;
             "empoderado" 
             "sofisticado";
     }
+    
 .catalogo a {
 
     height: 350px;
@@ -869,39 +936,43 @@ font-size: 2rem;
     margin-bottom: 5rem;
 }
     .peques img {
-        width: 110%;
+        width: 150%;
     }
     
   
     
     .puma img{
-        width: 60%;
+        width: 100%;
     }
     
     .colorido img {
-        width: 45%;
+        width: 85%;
     }
     
    
     
     .pomposo img {
-        width: 90%;
+        width: 130%;
     }
     
    
     
     .tigre img {
-        width: 50%;
+        width: 90%;
     }
     
   
     .empoderado img {
-        width: 70%;
+        width: 100%;
     }
     
    
     .sofisticado img {
-        width: 90%;
+        width: 120%;
     }
 
+    .catalogo h4 {
+       
+        text-align: center;
+    }
 }

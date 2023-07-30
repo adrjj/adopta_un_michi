@@ -1,0 +1,169 @@
+/* ----------------------------------------pantalla 768px -----------------------------*/
+@media (max-width:768px) {
+
+    /*------------INDEX--------------*/
+    .main-index {
+        padding-top: 2rem;
+
+        .portada {
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            .intro {
+
+                align-items: center;
+                padding: 1rem 0rem;
+
+                a {
+                    font-size: .8rem;
+                    padding: 5px;
+                }
+            }
+        }
+
+
+
+        .michis {
+            padding: 2rem 0.5rem 3rem 0.5rem;
+
+            .card {
+                width: 300px;
+                height: 604px;
+
+                img {
+                    width: 85%;
+                }
+            }
+
+        }
+
+
+        .bajada {
+            padding: 2rem 0 1rem 0;
+        }
+
+        .banner {
+            height: 35rem;
+
+        }
+    }
+
+    /*------------FOOTER--------------*/
+    footer {
+        height: 4rem;
+
+        .footer-cont {
+            .linea {
+                width: 30%;
+            }
+        }
+    }
+
+
+
+    /*------------PUBLICAR--------------*/
+    .publicar {
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+
+
+    .cont-img img {
+        width: 80%;
+    }
+
+
+
+    /*------------CONTACTO--------------*/
+    .contacto {
+        img {
+            display: none;
+        }
+
+
+
+
+
+        .cont-form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 2rem 1rem 6rem 1rem;
+            flex-direction: column;
+
+            h1 {
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            .cont-Nom-ape {
+                justify-content: space-around;
+            }
+
+            button {
+                font-weight: 900;
+                font-size: medium;
+            }
+
+
+        }
+
+    }
+
+    /*------------REFUGIOS--------------*/
+    main .titulo-refugio {
+        font-size: 3rem;
+
+    }
+
+    /*------------CATALOGO--------------*/
+    .catalogo {
+        display: grid;
+        grid-gap: 3rem 7rem;
+        justify-content: center;
+        justify-items: center;
+        grid-template-areas:
+            "peques peques"
+            "puma  colorido"
+            "pomposo tigre"
+            "empoderado sofisticado";
+
+            .puma img {
+                width: 15rem;
+            }
+        
+            .colorido img {
+                width: 12rem;
+            }
+        
+        
+        
+            .pomposo img {
+                width: 23rem;
+            }
+        
+        
+        
+            .tigre img {
+                width: 13rem;
+            }
+        
+        
+            .empoderado img {
+                width: 15rem;
+            }
+        
+        
+            .sofisticado img {
+                width: 18rem;
+            }
+    }
+}

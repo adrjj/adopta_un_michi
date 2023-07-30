@@ -1,0 +1,44 @@
+/* ----------------------------------------pantalla 1200px -----------------------------*/
+  /*------------INDEX-----------------------------------*/
+@media(max-width:1200px){
+ 
+    .portada h1 {
+        font-size: 5rem;
+    
+    }
+
+    .intro { 
+   
+        align-items: center;
+        padding: 1rem 0rem;
+    }
+    .banner {
+        height: 35rem;
+    
+    }
+   
+    .main-refu {
+        
+        .refugios {
+   
+            gap:3rem;
+           
+        }
+    }
+  /*------------CONTACTO-----------------------------------*/
+.contacto {
+
+    img{
+        width: 50%;
+    }
+
+    textarea{
+        width: 25rem;
+
+    }
+    
+    .cont-form{
+margin-bottom: 2rem;
+    }
+}    
+}

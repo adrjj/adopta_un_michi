@@ -1,598 +1,260 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+.portada h1, .main-catalogo h1, .main-refu .titulo-refugio {
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to left, #e61476, #c841f1, #343fdb, #34c8db, #2ecc71, #34c8db, #343fdb, #c841f1, #e61476);
+  color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  animation: color 10s linear infinite;
+  background-size: 500%;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.86, 0.15); }
+
+@keyframes color {
+  from {
+    background-position: 0% 50%; }
+  to {
+    background-position: 100% 50%; } }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-    font-family: lato;
-}
+  font-family: lato;
+  background-color: #03001C; }
 
-body {
-    background-color: #03001C;
-}
-
-
-/*-------------------bootstrap--------------------------*/
-
-.bg-body-tertiary{
-    --bs-bg-opacity: 0;
-    border-bottom: 1px solid rebeccapurple
-}
-.nav-link {
-    color:aliceblue;
-    text-shadow: 0rem 0rem 0.7rem #16e198;
-}
-.navbar-nav:hover {
-    --bs-nav-link-hover-color: #16E198; 
-
-} 
-.navbar-expand-lg .navbar-collapse {
-   justify-content: center;
-}
-
-/*---------------boton hambuguesa---------------*/
-
-.navbar-toggler{
-    background-color: #16E198;
-    width: 3rem;
-    font-size: 1rem;
-}
-.navbar>.container-fluid{
-    justify-content: flex-end;
-}
-.navbar-nav{
-    align-items: flex-end;
-    color: #210d41;
-}
-/*------------MAIN---------------*/
-
-.main-index{
-    background-color: #03001c;
-}
-
-
-.intro {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 5rem 5rem;
-}
-
-.intro a {
-    text-decoration: none;
-    color: #03001C;
-    background-color: #16E198;
-    padding: 10px;
-    border-radius: 50px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.intro p {
-width: 15rem;
-    color: aliceblue;
-    text-align: justify;
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.portada {
-    width: 100%;
-    height: 37rem;
-    background-image: url(../assets/img/portada.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-.prueba{
-    display: flex;
-    height: 50rem;
-    flex-direction: column;
-}
-
-.portada h1 {
-    color: aliceblue;
-    font-size: 6rem;
- 
-}
-.cont-banner{
-    display: flex;
-    justify-content: center;
-}
-.banner {
- 
-    display: flex;
-    align-items: center;
-    height: 20rem;
-}
-
-.bajada {
-    color: #16E198;
-    text-align: center;
-    background-color: #210d41;
-    font-size: 3rem;
-    font-weight: 500;
-    padding: 4rem 0 1rem 0;
-}
-
-/*------------SECTION MICHIS---------------*/
-
-.michis {
-    padding: 2rem 0 3rem 0;
-    background-color: #210d41;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
+/*------------card-primaria----------*/
 .card {
-    width: 320px;
-    height: 650px;
-    background-color: #151231;
-    display: flex;
-    flex-direction: column;
-   
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.card img {
+  width: 320px;
+  height: 650px;
+  background-color: #151231;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  .card h3 {
+    color: aliceblue;
+    font-size: 2rem; }
+  .card img {
+    overflow: hidden;
     width: 100%;
     height: auto;
-}
-
-.card h3 {
-    color: #FBF7F6;
-    font-size: 2rem;
-}
-
-.card p {
+    transition: transform 5s cubic-bezier(0.05, 0.87, 0.16, 0.92); }
+  .card img:hover {
+    transform: scale(1.3);
+    border: 2px solid #16e198;
+    border-radius: 2rem;
+    z-index: 1; }
+  .card p {
+    height: 150px;
     color: aliceblue;
     text-align: justify;
-    padding: 0 10px;
-}
-
-.card a {
-    text-decoration: none;
-    color: #03001C;
-    background-color: #16E198;
-    padding: 10px;
-    border-radius: 50px;
-    font-weight: 900;
-    text-align: center;
-}
-
-/*------------FOOTER---------------*/
-footer {
-    height: 5rem;
-    background-color: #301E67;
-    display: flex;
-    align-items: center;
-
-}
-
-
-
-.footer-cont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.redes {
-    display: flex;
-    gap: 3rem;
-}
-
-.icono1 {
-    color: #16E198;
-    font-size: 1.5rem;
-}
-
-.linea {
-    background-color: #16E198;
-    width: 40%;
-    height: 0.1rem;
-}
-
-/*------------html PUBLICAR---------------*/
-
-.publicar {
-    background-color: #BAD7E9;
-    display: flex;
-
-    padding: 3rem 0.5rem 1rem 0.5rem;
-
-
-}
-
-.cont-img {
-    width: 50%;
-    height: auto;
-    padding-bottom: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cont-img img {
-    width: 50%;
-}
-
-.publicar h1 {
-    font-size: 5rem;
-    font-weight: 300;
-    color: aliceblue;
-}
-
-.publicar p {
-    color: grey;
-    font-size: 1.3rem;
-}
-
-.info-publ {
-    display: flex;
-    flex-direction: column;
-    width: 25rem;
-    align-items: center;
-    grid-row-gap: 1rem;
-}
-
-.info-publ a {
-    text-decoration: none;
-    color: #03001C;
-    background-color: #16E198;
-    padding: 10px;
-    border-radius: 50px;
-    font-weight: 900;
-    text-align: center;
-}
-
-/*------------html DONACIONES---------------*/
-.donar {
-    background-color: #CCE9BA;
-    display: flex;
-}
-
-.donar img {
-    width: 30%;
-    height: auto;
-}
-
-.donar h1 {
-    font-size: 5rem;
-    font-weight: 500;
-    color: #441e67;
-}
-
-.donar p {
-    color: grey;
-    font-size: 1.3rem;
-}
-
-.info-donar {
-    display: flex;
-    flex-direction: column;
-    width: 25rem;
-    gap: 1rem;
-}
-
-.info-donar a {
-    text-decoration: none;
-    color: aliceblue;
-    background-color: #e6575e;
-    padding: 10px;
-    border-radius: 50px;
-    font-weight: 900;
-    text-align: center;
-}
-
-/*------------html REFUGIOS---------------*/
-
-main.main-refu{
-    background-color: #BAD7E9;
-    
-}
-main .titulo-refugio {
-    text-align: center;
-    color: #441e67;
-    padding-top: 1rem;
-    font-weight: 300;
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    
-
-}
-
-.refugios {
-    background-color: #BAD7E9;
-    display: flex;
-    align-items: center;
-    padding: 3rem 0rem;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
+    padding: 0 10px; }
+  .card .boton-principal {
+    margin-bottom: 10px; }
 
 .card-refu {
-    width: 320px;
-    height: 370px;
-    background-color: rgb(216, 217, 218);
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 0 0 25px 25px;
-    box-shadow: 0.5rem 0.5rem 0.5rem #413e45b8;
-
-}
-
-.card-refu p {
-    padding: 0 10px 0 10px;
-}
-
-.card-refu h3 {
+  width: 320px;
+  height: 370px;
+  background-color: #d8d9da;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0.5rem 0.5rem 0.5rem #413e45b8;
+  transition: transform 5s cubic-bezier(0.05, 0.87, 0.16, 0.92); }
+  .card-refu p {
+    padding: 0 10px 0 10px; }
+  .card-refu h3 {
     background-color: #e6575e;
     text-align: center;
     color: aliceblue;
     width: 100%;
-}
+    padding: 0.5rem; }
 
-.card-refu h3 {
-    background-color: #e6575e;
-    padding: 0.5rem;
-}
+.card-refu:hover {
+  transform: scale(1.3);
+  border: 2px solid #16e198;
+  z-index: 1; }
 
-.lourders h3 {
-    background-color: #C045EB
-    
-}
+/*-------------------bootstrap--------------------------*/
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+  border-bottom: 1px solid rebeccapurple; }
 
-.fun-gatitos h3 {
-    background-color: #8E45EB;
-    padding: 0.5rem;
-}
+.nav-link {
+  color: aliceblue;
+  text-shadow: 0rem 0rem 0.7rem #16e198; }
 
-.bicho h3 {
-    background-color: #456AEB;
-    padding: 0.5rem;
-}
+.navbar-nav:hover {
+  --bs-nav-link-hover-color: #16E198; }
 
-.web {
-    background-color: #e6575e;
-    text-align: center;
-    color: aliceblue;
-    padding: 0.3rem .5rem 0.3rem 0.5rem;
-    border-radius: 15px;
-    width: 70%;
-    text-decoration: none;
-    margin-bottom: 1rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem #410d2bb8;
-}
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center; }
 
-.web-a {
-    background-color: #C045EB;
-    text-align: center;
-    color: aliceblue;
-    padding: 0.3rem .5rem 0.3rem 0.5rem;
-    border-radius: 15px;
-    width: 90%;
-    text-decoration: none;
-    margin-bottom: 1rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8;
-}
+/*---------------boton hambuguesa---------------*/
+.navbar-toggler {
+  background-color: #16E198;
+  width: 3rem;
+  font-size: 1rem; }
 
-.web-b {
-    background-color: #8E45EB;
-    text-align: center;
-    color: aliceblue;
-    padding: 0.3rem .5rem 0.3rem 0.5rem;
-    border-radius: 15px;
-    width: 80%;
-    text-decoration: none;
-    margin-bottom: 1rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8;
-}
+.navbar > .container-fluid {
+  justify-content: flex-end; }
 
-.web-c {
-    background-color: #456AEB;
-    text-align: center;
-    color: aliceblue;
-    padding: 0.3rem .5rem 0.3rem 0.5rem;
-    border-radius: 15px;
-    width: 60%;
-    text-decoration: none;
-    margin-bottom: 1rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem #0d0f41b8;
-}
+.navbar-nav {
+  align-items: flex-end;
+  color: #210d41; }
 
-.refu-redes .icono1 {
-    color: #301E67;
-}
+/*-------------------boton principal--------------------------*/
+.boton-principal {
+  text-decoration: none;
+  color: #03001c;
+  background-color: #16e198;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 0px 0px 5px #e61476;
+  animation: mymove 5s infinite; }
 
-/*------------html CONTACTO---------------*/
+@keyframes mymove {
+  50% {
+    box-shadow: 0px 0px 50px blue; } }
 
-.cont-form h1 {
-    font-size: 4rem;
-    font-weight: 400;
-    color: #C045EB;
-    margin-bottom: 1rem;
+strong {
+  color: #16e198;
+  font-weight: 900; }
 
-}
+b {
+  color: #16e198;
+  font-weight: 700; }
 
-.cont-form {
-    width: 35%;
-}
+/*----------section-micis-----*/
+.main-index {
+  background-color: #03001c; }
 
-.contacto {
-    background-color: #FBF7F6;
+.portada {
+  width: 100%;
+  height: 37rem;
+  background-image: url("../assets/img/portada.png");
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  .portada h1 {
+    font-size: 6rem; }
+  .portada .prueba {
     display: flex;
+    height: 50rem;
+    flex-direction: column; }
+    .portada .prueba .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 5rem 5rem; }
+      .portada .prueba .intro p {
+        width: 15rem;
+        color: aliceblue;
+        text-align: justify;
+        font-size: 1rem;
+        font-weight: 300; }
 
-}
-
-.contacto img {
-    transform: scaleX(-1);
-}
-
-form {
+.cont-banner {
+  display: flex;
+  justify-content: center; }
+  .cont-banner .banner {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+    align-items: center;
+    height: 20rem; }
 
-input {
+.bajada {
+  color: #16e198;
+  text-align: center;
+  background-color: #210d41;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 4rem 0 1rem 0; }
+
+.info-bajada {
+  background-color: #210d41;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  text-align: justify;
+  padding: 0 10px;
+  padding: 2rem; }
+  .info-bajada p {
+    padding: 1rem;
     text-align: center;
-    border-style: none;
-    border-bottom: 2px solid #C045EB;
-    font-size: 1rem;
-    color: #c045eb;
-    background-color: #FBF7F6;
-}
+    width: 90%; }
 
-::placeholder {
-    color: #b9b9b9;
+.michis {
+  padding: 2rem 0 3rem 0;
+  background-color: #210d41;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap; }
 
-}
+footer {
+  height: 5rem;
+  background-color: #301E67;
+  display: flex;
+  align-items: center; }
 
-.cont-Nom-ape {
+.footer-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  .footer-cont .linea {
+    background-color: #16e198;
+    width: 40%;
+    height: 0.1rem; }
+  .footer-cont .redes {
     display: flex;
-    justify-content: space-between;
-}
-
-label {
-    display: none;
-}
-
-.contacto textarea {
-
-    border-style: none;
-    border: 2px solid #C045EB;
-    border-radius: 1.5rem;
-    text-align: center;
-    width: 30rem;
-    height: 10rem;
-    font-size: 1rem;
-    color: #c045eb;
-    background-color: #FBF7F6;
-}
-
-button {
-    background-color: #C045EB;
-    border: 0;
-    width: 8rem;
-    padding: 0.5rem;
-    color: aliceblue;
-    border-radius: 1rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8;
-}
-
-.con-btn {
-    display: flex;
-    justify-content: center;
-}
-
+    gap: 3rem; }
+  .footer-cont .icono1 {
+    color: #16e198;
+    font-size: 1.5rem; }
 
 /*------------html CATALOGO GRID---------------*/
 .main-catalogo {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3c206b+17,210d41+75 */
-    background: rgb(60, 32, 107);
-    /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, rgba(60, 32, 107, 1) 17%, rgba(33, 13, 65, 1) 75%);
-    /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(60, 32, 107, 1) 17%, rgba(33, 13, 65, 1) 75%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, rgba(60, 32, 107, 1) 17%, rgba(33, 13, 65, 1) 75%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c206b', endColorstr='#210d41', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-
-
-}
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3c206b+17,210d41+75 */
+  background: #3c206b;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #3c206b 17%, #210d41 75%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #3c206b 17%, #210d41 75%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #3c206b 17%, #210d41 75%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c206b', endColorstr='#210d41', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */ }
 
 .main-catalogo h1 {
-    color: #FBF7F6;
-    text-align: center;
-    padding-top: 3rem;
-    font-size: 3rem;
-    margin-bottom: 10rem;
-}
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 5rem;
+  margin-bottom: 1rem; }
+
+.bajada2 {
+  background-color: transparent; }
+
+.info-bajada .titulo-bajada {
+  color: #16e198;
+  text-align: center;
+  font-weight: 900; }
 
 .catalogo {
-    display: grid;
-    grid-gap: 5rem 10rem;
-    justify-content: center;
-    justify-items: center;
-    grid-template-areas:
-        "peques peques"
-        "puma  colorido"
-        "pomposo tigre"
-        "empoderado sofisticado";
-}
-
-.catalogo img {
-    width: 100%;
-}
-
-.peques {
-    grid-area: peques;
-
-}
-
-.peques img {
-    width: 200%;
-}
-
-.puma {
-    grid-area: puma;
-}
-
-.colorido {
-    grid-area: colorido;
-}
-
-.colorido img {
-    width: 85%;
-}
-
-.pomposo {
-    grid-area: pomposo;
-}
-
-.pomposo img {
-    width: 130%;
-}
-
-.tigre {
-    grid-area: tigre;
-}
-
-.tigre img {
-    width: 90%;
-}
-
-.empoderado {
-    grid-area: empoderado;
-}
-
-.empoderado img {
-    width: 110%;
-}
-
-.sofisticado {
-    grid-area: sofisticado;
-}
-
-.sofisticado img {
-    width: 130%;
-}
-
-.catalogo a {
+  margin-top: 4rem;
+  display: grid;
+  grid-gap: 5rem 10rem;
+  justify-content: center;
+  justify-items: center;
+  grid-template-areas: "peques peques" "puma  colorido" "pomposo tigre" "empoderado sofisticado"; }
+  .catalogo a {
     width: 300px;
     height: 500px;
     text-decoration: none;
@@ -602,386 +264,473 @@ button {
     align-items: center;
     justify-content: flex-end;
     gap: 1rem;
-    padding-bottom: 3rem;
-}
+    padding-bottom: 3rem; }
+  .catalogo h4 {
+    font-size: 2rem; }
+  .catalogo img {
+    width: 100%; }
 
-.catalogo h4 {
-    font-size: 2rem;
-}
+.peques {
+  grid-area: peques; }
+  .peques img {
+    width: 35rem; }
+  .peques h4 {
+    font-size: 3rem;
+    font-weight: 900; }
+
+.puma {
+  grid-area: puma; }
+
+.colorido {
+  grid-area: colorido; }
+  .colorido img {
+    width: 15rem; }
+
+.pomposo {
+  grid-area: pomposo; }
+  .pomposo img {
+    width: 25rem; }
+
+.tigre {
+  grid-area: tigre; }
+  .tigre img {
+    width: 15rem; }
+
+.empoderado {
+  grid-area: empoderado; }
+  .empoderado img {
+    width: 15rem; }
+
+.sofisticado {
+  grid-area: sofisticado; }
+  .sofisticado img {
+    width: 18rem; }
+
+/*------------html REFUGIOS---------------*/
+.main-refu {
+  background-color: #BAD7E9; }
+  .main-refu .titulo-refugio {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 4rem;
+    margin-bottom: 2rem; }
+  .main-refu .refugios {
+    background-color: #BAD7E9;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem; }
+
+.lourders h3 {
+  background-color: #C045EB; }
+
+.fun-gatitos h3 {
+  background-color: #8E45EB;
+  padding: 0.5rem; }
+
+.bicho h3 {
+  background-color: #456AEB;
+  padding: 0.5rem; }
+
+.web {
+  background-color: #e6575e;
+  text-align: center;
+  color: aliceblue;
+  padding: 0.3rem .5rem 0.3rem 0.5rem;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  width: 70%;
+  box-shadow: 0.5rem 0.5rem 0.5rem #410d2bb8; }
+
+.web-a {
+  text-align: center;
+  color: aliceblue;
+  padding: 0.3rem .5rem 0.3rem 0.5rem;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  background-color: #C045EB;
+  width: 90%;
+  box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8; }
+
+.web-b {
+  text-align: center;
+  color: aliceblue;
+  padding: 0.3rem .5rem 0.3rem 0.5rem;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  background-color: #8E45EB;
+  width: 80%;
+  box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8; }
+
+.web-c {
+  text-align: center;
+  color: aliceblue;
+  padding: 0.3rem .5rem 0.3rem 0.5rem;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  background-color: #456AEB;
+  width: 60%;
+  box-shadow: 0.5rem 0.5rem 0.5rem #0d0f41b8; }
+
+.refu-redes .icono1 {
+  color: #301E67;
+  width: 2rem;
+  font-size: 1.2rem; }
+
+/*------------html PUBLICAR---------------*/
+.publicar {
+  background: #bad7e9;
+  background: radial-gradient(circle, #bad7e9 4%, #bed1eb 37%, rgba(229, 154, 249, 0.994835) 69%);
+  display: flex;
+  padding: 3rem 0.5rem 1rem 0.5rem; }
+
+.cont-img {
+  width: 50%;
+  height: auto;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  animation: gato 10s infinite; }
+
+@keyframes gato {
+  0%,
+  30% {
+    background-image: url("../assets/img/publicaiones/publicar.png"); }
+  31%,
+  34% {
+    opacity: 0, 1; }
+  35%,
+  65% {
+    background-image: url("../assets/img/catalogo/puma.png"); }
+  66%,
+  69% {
+    opacity: 0, 1; }
+  70%,
+  100% {
+    background-image: url("../assets/img/publicaiones/publicar.png"); } }
+
+.publicar h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #301E67; }
+
+.publicar p {
+  color: #462a41;
+  font-size: 1.3rem;
+  font-weight: 600; }
+
+.info-publ {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  align-items: center;
+  grid-row-gap: 1rem; }
+  .info-publ b {
+    color: blueviolet; }
+
+/*.boton-principal{
+    box-shadow: 0.5rem 0.5rem 0.5rem #031407b8;
+}*/
+/*------------html CONTACTO---------------*/
+.cont-form {
+  width: 35%; }
+  .cont-form h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #C045EB;
+    margin-bottom: 1rem; }
+
+.contacto {
+  background-color: #FBF7F6;
+  display: flex; }
+  .contacto img {
+    transform: scaleX(-1); }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+input {
+  text-align: center;
+  border-style: none;
+  border-bottom: 2px solid #C045EB;
+  font-size: 1rem;
+  color: #c045eb;
+  background-color: #FBF7F6; }
+
+::placeholder {
+  color: #b9b9b9; }
+
+.cont-Nom-ape {
+  display: flex;
+  justify-content: space-between; }
+
+label {
+  display: none; }
+
+.contacto textarea {
+  border-style: none;
+  border: 2px solid #C045EB;
+  border-radius: 1.5rem;
+  text-align: center;
+  width: 30rem;
+  height: 10rem;
+  font-size: 1rem;
+  color: #c045eb;
+  background-color: #FBF7F6; }
+
+button {
+  background-color: #C045EB;
+  border: 0;
+  width: 8rem;
+  padding: 0.5rem;
+  color: aliceblue;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8; }
+
+.con-btn {
+  display: flex;
+  justify-content: center; }
 
 /* ----------------------------------------pantalla 1200px -----------------------------*/
-  /*------------INDEX-----------------------------------*/
-@media(max-width:1200px){
-    .portada h1 {
-        font-size: 4rem;
-    
-    }
-
-    .intro { 
-   
-        align-items: center;
-        padding: 1rem 0rem;
-    }
-    .banner {
-        height: 35rem;
-    
-    }
-
-}
+/*------------INDEX-----------------------------------*/
+@media (max-width: 1200px) {
+  .portada h1 {
+    font-size: 5rem; }
+  .intro {
+    align-items: center;
+    padding: 1rem 0rem; }
+  .banner {
+    height: 35rem; }
+  .main-refu .refugios {
+    gap: 3rem; }
+  /*------------CONTACTO-----------------------------------*/
+  .contacto img {
+    width: 50%; }
+  .contacto textarea {
+    width: 25rem; }
+  .contacto .cont-form {
+    margin-bottom: 2rem; } }
 
 /* ----------------------------------------pantalla 768px -----------------------------*/
-@media (max-width:768px) {
-  
-.main-index{
-    padding-top: 2rem;
-}
-.portada h1 {
-    font-size: 4rem;
-
-}
-.intro { 
-   
-    align-items: center;
-    padding: 1rem 0rem;
-}
-
-.intro a {
-    font-size: .8rem;
-    padding: 5px;
-}
-.michis{
-    padding: 2rem 0.5rem 3rem 0.5rem;
-}
-.michis .card{
-    width: 300px;
-    height: 604px;
-
-}
-.michis .card img{
-    width: 85%;
-}
-.bajada {
-    padding: 2rem 0 1rem 0;
-}
-.banner {
-    height: 35rem;
-
-}
-
-/*------------FOOTER--------------*/
-footer {
-    height: 4rem;
-}
-
-.linea {
-    width: 30%;
-}
-
-/*------------PUBLICAR--------------*/
-    .publicar h1 {
-        font-size: 3rem;
-    }
-
-    .publicar p {
-        font-size: 1rem;
-    }
-
-    .cont-img img {
-        width: 80%;
-    }
-
-
-
-    /*------------CONTACTO--------------*/
-    .contacto img {
-        display: none;
-    }
-
-    .cont-Nom-ape {
-        justify-content: space-around;
-    }
-
-    .cont-form h1 {
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    .cont-form {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding: 2rem 1rem 6rem 1rem;
-        flex-direction: column;
-
-    }
-
-    button {
-        font-weight: 900;
-        font-size: medium;
-    }
-/*------------REFUGIOS--------------*/
-    main .titulo-refugio{
-        font-size: 3rem;
-       
-    }
-/*------------CATALOGO--------------*/
-    .catalogo {
-        display: grid;
-        grid-gap: 3rem 7rem;
-        justify-content: center;
-        justify-items: center;
-        grid-template-areas:
-            "peques peques"
-            "puma  colorido"
-            "pomposo tigre"
-            "empoderado sofisticado";
-    }
-
-
-  
- 
-    
-    .peques img {
-        width: 180%;
-    }
-    
-  
-    
-    .puma img{
-        width: 80%;
-    }
-    
-    .colorido img {
-        width: 65%;
-    }
-    
-   
-    
-    .pomposo img {
-        width: 110%;
-    }
-    
-   
-    
-    .tigre img {
-        width: 70%;
-    }
-    
-  
-    .empoderado img {
-        width: 90%;
-    }
-    
-   
-    .sofisticado img {
-        width: 110%;
-    }
-
-}
-/* ----------------------------------------pantalla 600px -----------------------------*/
-    /*------------INDEX-----------------------------------*/
-@media(max-width:600px){
-
-    .portada h1 {
-    text-align: center;
-    }
-    .banner {
-    height: 37rem;
-    }
-}
-/* --------------------------------------pantalla 680px ----------------------------*/
-
-@media (max-width:680px){
- /*------------CATALOGO--------------*/
- .catalogo{
-    grid-gap: 3rem 1rem;
- }
- .empoderado img {
-    width: 70%;
-}
-.sofisticado img {
-    width: 90%;
-}
-.catalogo a {
-    width: 200px;
-    height: 334px;}
-
-    .catalogo h4 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-}
-/* --------------------------------------pantalla 400px ----------------------------*/
-@media(max-width:400px){
-    .catalogo {
-        grid-gap: 1rem 1rem;
-        grid-template-areas:
-            "peques"
-            "puma"  
-            "colorido"
-            "pomposo"
-            "tigre"
-            "empoderado" 
-            "sofisticado";
-    }
-}
-
-/* --------------------------------------pantalla 320px ----------------------------*/
-
-
-@media (max-width:320px) {
-    .nav-link {
-        color:#210d41;
-        text-shadow: 0rem 0rem 0.7rem #2c0131;
-    }
-   /*------------INDEX--------------*/
-
-header{
-    background-color: #16E198;
-}
-.menu li a{
-    color:#441e67;
-    font-weight: bold;
-}
-.intro{
-    padding: 0rem 0rem 2rem 0;
-}
-.michis .card a{
-    padding: 7px;
-}
-.portada{
-    background-size:contain;
-    height: 26rem;
-}
-.portada h1 {
-    font-size: 3rem;
-    text-align: center;
-}
-.banner{
-    align-items: flex-start;
-}
-.bajada{
-font-size: 2rem;
-}
-    /*------------FOOTER--------------*/
-    footer {
-        height: 3rem;
-    }
-
-    .linea {
-        width: 20%;
-    }
-
-    .redes {
-        gap: 2rem;
-    }
-
-    /*------------PUBLICAR--------------*/
-    .publicar {
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .cont-img {
-        width: 100%;
-        justify-content: normal;
-    }
-
-    .info-publ {
-        width: 17rem;
-        margin-bottom: 2rem;
-    }
-
-    .publicar h1 {
-        text-align: center;
-    }
-
-    .info-publ p {
-        text-align: justify;
-    }
-
-    /*------------CONTACTO--------------*/
-
-    .contacto textarea {
-        width: 18rem;
-
-    }
-
-    .cont-Nom-ape {
-
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
-
-    /*------------REFUGIOS--------------*/
-    .card-refu{
+@media (max-width: 768px) {
+  /*------------INDEX--------------*/
+  .main-index {
+    padding-top: 2rem; }
+    .main-index .portada h1 {
+      font-size: 4rem; }
+    .main-index .portada .intro {
+      align-items: center;
+      padding: 1rem 0rem; }
+      .main-index .portada .intro a {
+        font-size: .8rem;
+        padding: 5px; }
+    .main-index .michis {
+      padding: 2rem 0.5rem 3rem 0.5rem; }
+      .main-index .michis .card {
         width: 300px;
-        height: 385px;
-    }
+        height: 604px; }
+        .main-index .michis .card img {
+          width: 85%; }
+    .main-index .bajada {
+      padding: 2rem 0 1rem 0; }
+    .main-index .banner {
+      height: 35rem; }
+  /*------------FOOTER--------------*/
+  footer {
+    height: 4rem; }
+    footer .footer-cont .linea {
+      width: 30%; }
+  /*------------PUBLICAR--------------*/
+  .publicar h1 {
+    font-size: 3rem; }
+  .publicar p {
+    font-size: 1rem; }
+  .cont-img img {
+    width: 80%; }
+  /*------------CONTACTO--------------*/
+  .contacto img {
+    display: none; }
+  .contacto .cont-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem 6rem 1rem;
+    flex-direction: column; }
+    .contacto .cont-form h1 {
+      font-size: 3rem;
+      text-align: center; }
+    .contacto .cont-form .cont-Nom-ape {
+      justify-content: space-around; }
+    .contacto .cont-form button {
+      font-weight: 900;
+      font-size: medium; }
+  /*------------REFUGIOS--------------*/
+  main .titulo-refugio {
+    font-size: 3rem; }
+  /*------------CATALOGO--------------*/
+  .catalogo {
+    display: grid;
+    grid-gap: 3rem 7rem;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: "peques peques" "puma  colorido" "pomposo tigre" "empoderado sofisticado"; }
+    .catalogo .puma img {
+      width: 15rem; }
+    .catalogo .colorido img {
+      width: 12rem; }
+    .catalogo .pomposo img {
+      width: 23rem; }
+    .catalogo .tigre img {
+      width: 13rem; }
+    .catalogo .empoderado img {
+      width: 15rem; }
+    .catalogo .sofisticado img {
+      width: 18rem; } }
 
- /*------------CATALOGO--------------*/
-    .catalogo {
-        grid-gap: 1rem 1rem;
-        grid-template-areas:
-            "peques"
-            "puma"  
-            "colorido"
-            "pomposo"
-            "tigre"
-            "empoderado" 
-            "sofisticado";
-    }
-    
-.catalogo a {
+@media (max-width: 680px) {
+  /*------------CATALOGO--------------*/
+  .main-catalogo h1 {
+    font-size: 4rem; }
+  .main-catalogo .catalogo {
+    grid-gap: 3rem 1rem; }
+    .main-catalogo .catalogo a {
+      width: 200px;
+      height: 334px; }
+    .main-catalogo .catalogo h4 {
+      font-size: 1.5rem;
+      text-align: center; }
+    .main-catalogo .catalogo .peques img {
+      width: 25rem; }
+    .main-catalogo .catalogo .puma img {
+      width: 10rem; }
+    .main-catalogo .catalogo .colorido img {
+      width: 8rem; }
+    .main-catalogo .catalogo .pomposo img {
+      width: 15rem; }
+    .main-catalogo .catalogo .tigre img {
+      width: 9rem; }
+    .main-catalogo .catalogo .empoderado img {
+      width: 10rem; }
+    .main-catalogo .catalogo .sofisticado img {
+      width: 13rem; } }
 
-    height: 350px;
-}
-.main-catalogo h1 {
-    
+@media (max-width: 583px) {
+  /*------------INDEX--------------*/
+  .main-index {
+    grid-template-areas: "peques peques" "puma "  "colorido colorido" "pomposo tigre" "empoderado sofisticado"; }
+    .main-index .portada {
+      background-size: 65rem; }
+      .main-index .portada h1 {
+        font-size: 3rem; }
+    .main-index .banner {
+      height: 40rem; }
+  /*------------REFUGIOS--------------*/
+  .main-refu .titulo-refugio {
+    font-size: 3rem; }
+  /*------------PUBLICAR--------------*/
+  .publicar {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center; }
+    .publicar h1 {
+      text-align: center; }
+    .publicar .cont-img {
+      width: 100%;
+      height: 20rem;
+      justify-content: normal;
+      background-size: 12rem; }
+    .publicar .info-publ {
+      width: 17rem;
+      margin-bottom: 2rem; }
+      .publicar .info-publ p {
+        text-align: justify; } }
+
+@media (max-width: 425px) {
+  /*------------INDEX--------------*/
+  .main-index .portada {
+    background-size: 65rem; }
+    .main-index .portada h1 {
+      font-size: 2.5rem; }
+  .main-index .banner {
+    height: 43rem; }
+  /*------------FOOTER--------------*/
+  footer .footer-cont .linea {
+    width: 20%; } }
+
+@media (max-width: 375px) {
+  /*------------INDEX--------------*/
+  .main-index .portada {
+    height: 31rem;
+    background-size: 29rem;
+    background-position: top 23rem right -3rem; }
+    .main-index .portada h1 {
+      font-size: 4.5rem;
+      text-align: center; }
+  .main-index .banner {
+    height: 12rem; }
+  /*------------CATALOGO--------------*/
+  .main-catalogo .catalogo {
+    grid-gap: 1rem 1rem;
+    grid-template-areas: "peques" "puma"   "colorido" "pomposo" "tigre" "empoderado"  "sofisticado"; }
+    .main-catalogo .catalogo .peques img {
+      width: 20rem; }
+  .main-catalogo h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem; }
+  /*------------CONTACTO--------------*/
+  .cont-Nom-ape {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; }
+  .contacto textarea {
+    width: 18rem; }
+  /*------------REFUGIOS--------------*/
+  .card-refu {
+    width: 300px;
+    height: 400px; }
+  .refu-redes {
+    padding-bottom: 1rem; }
+    .refu-redes .icono1 {
+      color: #301E67;
+      width: 2rem;
+      font-size: 2rem;
+      margin-left: 1rem; } }
+
+@media (max-width: 320px) {
+  /*------------INDEX--------------*/
+  .main-index .portada {
+    height: 30rem;
+    background-size: 25rem;
+    background-position: top 24rem right -2.5rem; }
+    .main-index .portada h1 {
+      font-size: 4rem;
+      text-align: center; }
+  .main-index h2 {
     font-size: 2rem;
-    margin-bottom: 5rem;
-}
-    .peques img {
-        width: 150%;
-    }
-    
-  
-    
-    .puma img{
-        width: 100%;
-    }
-    
-    .colorido img {
-        width: 85%;
-    }
-    
-   
-    
-    .pomposo img {
-        width: 130%;
-    }
-    
-   
-    
-    .tigre img {
-        width: 90%;
-    }
-    
-  
-    .empoderado img {
-        width: 100%;
-    }
-    
-   
-    .sofisticado img {
-        width: 120%;
-    }
-
-    .catalogo h4 {
-       
-        text-align: center;
-    }
-}
+    background-color: #321869; }
+  .main-index .bajada {
+    padding: 0rem 0 1rem 0; }
+  .main-index .banner {
+    height: 12rem; }
+  /*------------CATALOGO--------------*/
+  .main-catalogo .catalogo {
+    grid-gap: 1rem 1rem;
+    grid-template-areas: "peques" "puma" "colorido" "pomposo" "tigre" "empoderado" "sofisticado"; }
+    .main-catalogo .catalogo .peques img {
+      width: 20rem; }
+  .main-catalogo h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem; } }

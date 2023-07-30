@@ -1,0 +1,80 @@
+/*----------section-micis-----*/
+
+.main-index {
+    background-color: $background-primario;
+}
+
+.portada {
+    width: 100%;
+    height: 37rem;
+    background-image: url("../assets/img/portada.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    h1 {
+ @extend %titulo-principal;
+        font-size: 6rem;
+
+    }
+
+    .prueba {
+        display: flex;
+        height: 50rem;
+        flex-direction: column;
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 5rem 5rem;
+
+            p {
+                width: 15rem;
+                color: $color-texto-principal;
+                text-align: justify;
+                font-size: 1rem;
+                font-weight: 300;
+            }
+
+        }
+
+
+    }
+}
+
+.cont-banner {
+    display: flex;
+    justify-content: center;
+
+    .banner {
+
+        display: flex;
+        align-items: center;
+        height: 20rem;
+    }
+}
+
+
+
+.bajada {
+    color: $background-secundario;
+    text-align: center;
+    background-color:  #210d41;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 4rem 0 1rem 0;
+}
+.info-bajada{
+    background-color: #210d41;
+    display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+@include estilo-parrafo;
+padding: 2rem;
+  
+    p{padding: 1rem;
+        text-align: center;
+        width: 90%;
+        }
+}

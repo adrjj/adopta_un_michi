@@ -1,0 +1,33 @@
+footer {
+    height: 5rem;
+    background-color: #301E67;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.footer-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .linea {
+        background-color: $background-secundario;
+        width: 40%;
+        height: 0.1rem;
+    }
+
+    .redes {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .icono1 {
+        color: $background-secundario;
+        font-size: 1.5rem;
+    }
+
+}

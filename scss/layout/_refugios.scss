@@ -1,0 +1,79 @@
+/*------------html REFUGIOS---------------*/
+
+.main-refu {
+    background-color: #BAD7E9;
+
+    .titulo-refugio {
+        @extend %titulo-principal;
+
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+
+
+    }
+
+    .refugios {
+        background-color: #BAD7E9;
+        display: flex;
+        align-items: center;
+        padding: 3rem 0rem;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+
+
+
+
+    }
+}
+
+.lourders h3 {
+    background-color: #C045EB
+}
+
+.fun-gatitos h3 {
+    background-color: #8E45EB;
+    padding: 0.5rem;
+}
+
+.bicho h3 {
+    background-color: #456AEB;
+    padding: 0.5rem;
+}
+
+.web {
+    background-color: #e6575e;
+    @include estilo-web;
+    width: 70%;
+    box-shadow: 0.5rem 0.5rem 0.5rem #410d2bb8;
+}
+
+.web-a {
+    @include estilo-web;
+    background-color: #C045EB;
+    width: 90%;
+    box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8;
+}
+
+.web-b {
+    @include estilo-web;
+    background-color: #8E45EB;
+    width: 80%;
+    box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8;
+}
+
+.web-c {
+    @include estilo-web;
+    background-color: #456AEB;
+    width: 60%;
+    box-shadow: 0.5rem 0.5rem 0.5rem #0d0f41b8;
+}
+
+.refu-redes .icono1 {
+    color: #301E67;
+    width: 2rem;
+    font-size: 1.2rem;
+}

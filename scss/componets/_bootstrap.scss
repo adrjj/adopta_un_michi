@@ -1,0 +1,29 @@
+/*-------------------bootstrap--------------------------*/
+.bg-body-tertiary{
+    --bs-bg-opacity: 0;
+    border-bottom: 1px solid rebeccapurple
+}
+.nav-link {
+    color:aliceblue;
+    text-shadow: 0rem 0rem 0.7rem #16e198;
+}
+.navbar-nav:hover {
+    --bs-nav-link-hover-color: #16E198; 
+
+} 
+.navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+}
+/*---------------boton hambuguesa---------------*/
+.navbar-toggler{
+    background-color: #16E198;
+    width: 3rem;
+    font-size: 1rem;
+}
+.navbar>.container-fluid{
+    justify-content: flex-end;
+}
+.navbar-nav{
+    align-items: flex-end;
+    color: #210d41;
+}

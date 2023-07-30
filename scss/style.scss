@@ -1,0 +1,35 @@
+
+@import "./utillitis/variables";
+@import"./utillitis/mixins";
+@import"./utillitis/extend";
+
+@import "./base/reset";
+@import "./base/typo";
+ 
+
+@import "./componets/card-primaria";
+@import"./componets/card-secundaria";
+@import "./componets/bootstrap";
+@import "./componets/boton";
+@import"./componets/strong";
+@import"./componets/etiqueta-b";
+
+@import "./layout/main";
+
+@import "./layout/section-michis";
+@import"./layout/footer";
+@import"./layout/categoria";
+
+@import"./layout/refugios";
+@import"./layout/publicar";
+@import"./layout/contacto";
+
+@import"./query/laptop-L";
+@import"./query/laptop";
+@import"./query/tablet";
+@import"./query/tablet-M";
+@import"./query/tablet-S";
+
+@import"./query/mobile-L";
+@import"./query/mobile-M";
+@import"./query/mobile-S";

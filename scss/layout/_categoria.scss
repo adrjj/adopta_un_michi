@@ -1,0 +1,137 @@
+/*------------html CATALOGO GRID---------------*/
+.main-catalogo {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3c206b+17,210d41+75 */
+    background: rgb(60, 32, 107);
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(60, 32, 107, 1) 17%, rgba(33, 13, 65, 1) 75%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(60, 32, 107, 1) 17%, rgba(33, 13, 65, 1) 75%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(60, 32, 107, 1) 17%, rgba(33, 13, 65, 1) 75%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c206b', endColorstr='#210d41', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+
+}
+
+.main-catalogo h1 {
+    @extend %titulo-principal;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.bajada2{
+  background-color: transparent;
+}
+.info-bajada{
+  
+    .titulo-bajada{
+        color:$background-secundario;
+        text-align: center;
+        font-weight: 900;
+    }
+    
+}
+
+
+.catalogo {
+    margin-top: 4rem;
+    display: grid;
+    grid-gap: 5rem 10rem;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+        "peques peques"
+        "puma  colorido"
+        "pomposo tigre"
+        "empoderado sofisticado";
+
+    a {
+        width: 300px;
+        height: 500px;
+        text-decoration: none;
+        color: $color-texto-principal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.peques {
+    grid-area: peques;
+
+    img {
+        width: 35rem;
+    }
+    h4{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+}
+
+
+
+.puma {
+    grid-area: puma;
+}
+
+.colorido {
+    grid-area: colorido;
+
+    img {
+        width: 15rem;
+    }
+}
+
+
+
+.pomposo {
+    grid-area: pomposo;
+
+    img {
+        width: 25rem;
+    }
+
+}
+
+
+.tigre {
+    grid-area: tigre;
+
+    img {
+        width: 15rem;
+    }
+}
+
+
+
+.empoderado {
+    grid-area: empoderado;
+
+    img {
+        width: 15rem;
+    }
+}
+
+
+
+.sofisticado {
+    grid-area: sofisticado;
+
+    img {
+        width: 18rem;
+    }
+}

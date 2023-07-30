@@ -1,0 +1,62 @@
+@media (max-width:320px) {
+
+    /*------------INDEX--------------*/
+    .main-index {
+
+
+        .portada {
+            height: 30rem;
+            background-size: 25rem;
+            background-position: top 24rem right -2.5rem;
+
+            h1 {
+
+                font-size: 4rem;
+                text-align: center;
+            }
+
+        }
+        h2{
+            font-size: 2rem;
+            background-color: #321869;
+            
+        }
+        .bajada{
+            padding: 0rem 0 1rem 0;
+        }
+
+        .banner {
+            height: 12rem;
+
+        }
+    }
+
+    /*------------CATALOGO--------------*/
+    .main-catalogo {
+        .catalogo {
+            grid-gap: 1rem 1rem;
+            grid-template-areas:
+                "peques"
+                "puma"
+                "colorido"
+                "pomposo"
+                "tigre"
+                "empoderado"
+                "sofisticado";
+
+            .peques img {
+                width: 20rem;
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+
+
+    }
+    
+
+ 
+}

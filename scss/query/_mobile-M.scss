@@ -1,0 +1,79 @@
+@media (max-width:375px) {
+
+    /*------------INDEX--------------*/
+    .main-index {
+
+
+        .portada {
+            height: 31rem;
+            background-size: 29rem;
+            background-position: top 23rem right -3rem;
+
+            h1 {
+                
+                font-size: 4.5rem;
+                text-align: center;
+            }
+
+
+        }
+
+        .banner {
+            height: 12rem;
+
+        }
+    }
+
+     /*------------CATALOGO--------------*/
+    .main-catalogo{
+        .catalogo {
+            grid-gap: 1rem 1rem;
+            grid-template-areas:
+                "peques"
+                "puma"  
+                "colorido"
+                "pomposo"
+                "tigre"
+                "empoderado" 
+                "sofisticado";
+                .peques img {
+                    width: 20rem;
+                }
+        }
+        h1{
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+    
+    
+}
+
+ /*------------CONTACTO--------------*/
+.cont-Nom-ape {
+   
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.contacto textarea {
+    width: 18rem;
+}
+
+    /*------------REFUGIOS--------------*/
+    .card-refu{
+        width: 300px;
+        height: 400px;
+    }
+    
+    .refu-redes {
+        padding-bottom: 1rem;
+        .icono1 {
+            color: #301E67;
+            width: 2rem;
+            font-size: 2rem;
+          margin-left: 1rem;
+          
+        
+        }
+    }
+}

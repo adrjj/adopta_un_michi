@@ -666,6 +666,15 @@ button {
       font-size: 2.5rem; }
   .main-index .banner {
     height: 43rem; }
+  /*------------CATALOGO--------------*/
+  .main-catalogo .catalogo {
+    grid-gap: 1rem 1rem;
+    grid-template-areas: "peques" "puma"   "colorido" "pomposo" "tigre" "empoderado"  "sofisticado"; }
+    .main-catalogo .catalogo .peques img {
+      width: 20rem; }
+  .main-catalogo h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem; }
   /*------------FOOTER--------------*/
   footer .footer-cont .linea {
     width: 20%; }
@@ -680,23 +689,19 @@ button {
 @media (max-width: 375px) {
   /*------------INDEX--------------*/
   .main-index .portada {
-    height: 31rem;
-    background-size: 29rem;
-    background-position: top 23rem right -3rem; }
+    height: 30rem;
+    background-size: 25rem;
+    background-position: top 24rem right -1rem; }
     .main-index .portada h1 {
-      font-size: 4.5rem;
+      font-size: 4rem;
       text-align: center; }
+  .main-index h2 {
+    font-size: 2rem;
+    background-color: #321869; }
+  .main-index .bajada {
+    padding: 0rem 0 1rem 0; }
   .main-index .banner {
     height: 12rem; }
-  /*------------CATALOGO--------------*/
-  .main-catalogo .catalogo {
-    grid-gap: 1rem 1rem;
-    grid-template-areas: "peques" "puma"   "colorido" "pomposo" "tigre" "empoderado"  "sofisticado"; }
-    .main-catalogo .catalogo .peques img {
-      width: 20rem; }
-  .main-catalogo h1 {
-    font-size: 3rem;
-    margin-bottom: 4rem; }
   /*------------REFUGIOS--------------*/
   .card-refu {
     width: 300px;
@@ -710,27 +715,5 @@ button {
       margin-left: 1rem; } }
 
 @media (max-width: 320px) {
-  /*------------INDEX--------------*/
   .main-index .portada {
-    height: 30rem;
-    background-size: 25rem;
-    background-position: top 24rem right -2.5rem; }
-    .main-index .portada h1 {
-      font-size: 4rem;
-      text-align: center; }
-  .main-index h2 {
-    font-size: 2rem;
-    background-color: #321869; }
-  .main-index .bajada {
-    padding: 0rem 0 1rem 0; }
-  .main-index .banner {
-    height: 12rem; }
-  /*------------CATALOGO--------------*/
-  .main-catalogo .catalogo {
-    grid-gap: 1rem 1rem;
-    grid-template-areas: "peques" "puma" "colorido" "pomposo" "tigre" "empoderado" "sofisticado"; }
-    .main-catalogo .catalogo .peques img {
-      width: 20rem; }
-  .main-catalogo h1 {
-    font-size: 3rem;
-    margin-bottom: 4rem; } }
+    background-position: top 24rem right -2.5rem; } }

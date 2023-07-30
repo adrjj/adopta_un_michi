@@ -19,6 +19,29 @@
 
         }
     }
+     /*------------CATALOGO--------------*/
+     .main-catalogo{
+        .catalogo {
+            grid-gap: 1rem 1rem;
+            grid-template-areas:
+                "peques"
+                "puma"  
+                "colorido"
+                "pomposo"
+                "tigre"
+                "empoderado" 
+                "sofisticado";
+                .peques img {
+                    width: 20rem;
+                }
+        }
+        h1{
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+    
+    
+}
  /*------------FOOTER--------------*/
     footer {
 

@@ -1,0 +1,17 @@
+{
+  "name": "adopta_un-_michi",
+  "version": "1.0.0",
+  "description": "<!DOCTYPE html>\r <html lang=\"en\">\r <head>\r     <meta charset=\"UTF-8\">\r     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r     <title>Aplicamos conocimiento </title>\r     <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r <link href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap\" rel=\"stylesheet\">\r </head>\r <body style=\"background-color: #03001c;\">\r     <section style=\"background-color: #03001c; display: flex; flex-direction: column; align-items: center;color: aliceblue;font-family: montserrat;\">\r <h1 style=\" font-weight: 700; font-size: 3rem;\"> PROYECTO PERSONAL </h1>\r <H2>Aplicamos conocimiento en:</H2>\r <div class=\"cont-h3\" style=\"display: flex; gap: 2rem; color:#16E198\">\r <H3>HTML</H3>\r <H3>CSS</H3>\r <H3>BOOTSTRAP</H3>\r <H3>GIT</H3>\r <H3>GIT HUB </H3>\r </div>\r <p style=\"width: 50%; text-align: center;\">Realice una web responsive, a la que llame ADOPTA UN MICHI, como escusa para desarrollar\r     las habilidades que vamos adiquiriendo durante la cursada, en el curso de Coder House\r     de Desarrollo Web.\r </p>\r <img src=\"https://i.ibb.co/cN4hGzD/web.png\" alt=\"foto de la web\" style=\"border: 2px solid #16E198; border-radius: 2rem; width: 80%;\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss ./scss/style.scss ./css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"" 
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}

@@ -29,4 +29,15 @@
             }
         }
     }
+
+     /*------------CONTACTO--------------*/
+.cont-Nom-ape {
+   
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.contacto textarea {
+    width: 18rem;
+}
 }

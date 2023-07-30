@@ -668,7 +668,14 @@ button {
     height: 43rem; }
   /*------------FOOTER--------------*/
   footer .footer-cont .linea {
-    width: 20%; } }
+    width: 20%; }
+  /*------------CONTACTO--------------*/
+  .cont-Nom-ape {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; }
+  .contacto textarea {
+    width: 18rem; } }
 
 @media (max-width: 375px) {
   /*------------INDEX--------------*/
@@ -690,13 +697,6 @@ button {
   .main-catalogo h1 {
     font-size: 3rem;
     margin-bottom: 4rem; }
-  /*------------CONTACTO--------------*/
-  .cont-Nom-ape {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center; }
-  .contacto textarea {
-    width: 18rem; }
   /*------------REFUGIOS--------------*/
   .card-refu {
     width: 300px;

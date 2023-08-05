@@ -11,8 +11,6 @@
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c206b', endColorstr='#210d41', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
-
-
 }
 
 .main-catalogo h1 {
@@ -22,19 +20,18 @@
     font-size: 5rem;
     margin-bottom: 1rem;
 }
-.bajada2{
-  background-color: transparent;
+
+.bajada2 {
+    background-color: transparent;
 }
-.info-bajada{
-  
-    .titulo-bajada{
-        color:$background-secundario;
+
+.info-bajada {
+    .titulo-bajada {
+        color: $background-secundario;
         text-align: center;
         font-weight: 900;
     }
-    
 }
-
 
 .catalogo {
     margin-top: 4rem;
@@ -76,13 +73,12 @@
     img {
         width: 35rem;
     }
-    h4{
+
+    h4 {
         font-size: 3rem;
         font-weight: 900;
     }
 }
-
-
 
 .puma {
     grid-area: puma;
@@ -96,17 +92,13 @@
     }
 }
 
-
-
 .pomposo {
     grid-area: pomposo;
 
     img {
         width: 25rem;
     }
-
 }
-
 
 .tigre {
     grid-area: tigre;
@@ -116,8 +108,6 @@
     }
 }
 
-
-
 .empoderado {
     grid-area: empoderado;
 
@@ -125,8 +115,6 @@
         width: 15rem;
     }
 }
-
-
 
 .sofisticado {
     grid-area: sofisticado;

@@ -9,35 +9,39 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
- 
+
 
     h3 {
         color: $color-texto-principal;
         font-size: 2rem;
     }
+
     img {
-        overflow:hidden;
+        overflow: hidden;
         width: 100%;
         height: auto;
-        transition: transform 5s cubic-bezier(.05,.87,.16,.92);
+        transition: transform 5s cubic-bezier(.05, .87, .16, .92);
     }
-    img:hover{
- transform: scale(1.3);
- border: 2px solid $background-secundario;
- border-radius: 2rem;
- z-index: 1;
- 
+
+    img:hover {
+        transform: scale(1.3);
+        border: 2px solid $background-secundario;
+        border-radius: 2rem;
+        z-index: 1;
+
 
     }
+
     p {
         height: 150px;
         color: $color-texto-principal;
         text-align: justify;
         padding: 0 10px;
     }
-    .boton-principal{
-    margin-bottom: 10px;
-   
+
+    .boton-principal {
+        margin-bottom: 10px;
+
     }
-    
+
 }

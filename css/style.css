@@ -79,30 +79,30 @@ body {
   z-index: 1; }
 
 /*-------------------bootstrap--------------------------*/
-.bg-body-tertiary {
+.adr-bg-body-tertiary {
   --bs-bg-opacity: 0;
   border-bottom: 1px solid rebeccapurple; }
 
-.nav-link {
+.adr-nav-link {
   color: aliceblue;
   text-shadow: 0rem 0rem 0.7rem #16e198; }
 
-.navbar-nav:hover {
+.adr-navbar-nav:hover {
   --bs-nav-link-hover-color: #16E198; }
 
-.navbar-expand-lg .navbar-collapse {
+.navbar-expand-lg .adr-navbar-collapse {
   justify-content: center; }
 
 /*---------------boton hambuguesa---------------*/
-.navbar-toggler {
+.adr-navbar {
   background-color: #16E198;
   width: 3rem;
   font-size: 1rem; }
 
-.navbar > .container-fluid {
+.navbar > .adr-container-fluid {
   justify-content: flex-end; }
 
-.navbar-nav {
+.adr-navbar-nav {
   align-items: flex-end;
   color: #210d41; }
 
@@ -167,11 +167,12 @@ b {
     height: 20rem; }
 
 .bajada {
+  margin: 0;
   color: #16e198;
   text-align: center;
   background-color: #210d41;
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 900;
   padding: 4rem 0 1rem 0; }
 
 .info-bajada {
@@ -182,8 +183,7 @@ b {
   align-items: center;
   color: aliceblue;
   text-align: justify;
-  padding: 0 10px;
-  padding: 2rem; }
+  padding: 0 10px; }
   .info-bajada p {
     padding: 1rem;
     text-align: center;
@@ -434,13 +434,11 @@ footer {
   flex-direction: column;
   width: 25rem;
   align-items: center;
-  grid-row-gap: 1rem; }
+  grid-row-gap: 1rem;
+  margin-bottom: 5rem; }
   .info-publ b {
     color: blueviolet; }
 
-/*.boton-principal{
-    box-shadow: 0.5rem 0.5rem 0.5rem #031407b8;
-}*/
 /*------------html CONTACTO---------------*/
 .cont-form {
   width: 35%; }
@@ -488,7 +486,8 @@ label {
   height: 10rem;
   font-size: 1rem;
   color: #c045eb;
-  background-color: #FBF7F6; }
+  background-color: #FBF7F6;
+  margin-top: 1.5rem; }
 
 button {
   background-color: #C045EB;
@@ -500,8 +499,17 @@ button {
   box-shadow: 0.5rem 0.5rem 0.5rem #210d41b8; }
 
 .con-btn {
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center; }
+
+@media (max-width: 1440px) {
+  /*------------INDEX-----------------------------------*/
+  .main-index .info-bajada p {
+    width: 50%; }
+  /*------------categorias-----------------------------------*/
+  .main-catalogo .info-bajada p {
+    width: 50%; } }
 
 /* ----------------------------------------pantalla 1200px -----------------------------*/
 /*------------INDEX-----------------------------------*/
@@ -521,13 +529,18 @@ button {
   .contacto textarea {
     width: 25rem; }
   .contacto .cont-form {
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  /*------------categorias-----------------------------------*/
+  .main-catalogo .info-bajada p {
+    width: 65%; } }
 
 /* ----------------------------------------pantalla 768px -----------------------------*/
 @media (max-width: 768px) {
   /*------------INDEX--------------*/
   .main-index {
     padding-top: 2rem; }
+    .main-index .info-bajada p {
+      width: 70%; }
     .main-index .portada h1 {
       font-size: 4rem; }
     .main-index .portada .intro {
@@ -580,6 +593,8 @@ button {
   main .titulo-refugio {
     font-size: 3rem; }
   /*------------CATALOGO--------------*/
+  .main-catalogo .info-bajada p {
+    width: 85%; }
   .catalogo {
     display: grid;
     grid-gap: 3rem 7rem;
@@ -629,7 +644,7 @@ button {
 @media (max-width: 583px) {
   /*------------INDEX--------------*/
   .main-index {
-    grid-template-areas: "peques peques" "puma "  "colorido colorido" "pomposo tigre" "empoderado sofisticado"; }
+    grid-template-areas: "peques peques" "puma " "colorido colorido" "pomposo tigre" "empoderado sofisticado"; }
     .main-index .portada {
       background-size: 65rem; }
       .main-index .portada h1 {
@@ -660,6 +675,10 @@ button {
 
 @media (max-width: 425px) {
   /*------------INDEX--------------*/
+  .main-index .info-bajada p {
+    width: 100%; }
+  .main-index .bajada {
+    font-size: 3rem; }
   .main-index .portada {
     background-size: 65rem; }
     .main-index .portada h1 {
@@ -669,19 +688,21 @@ button {
   /*------------CATALOGO--------------*/
   .main-catalogo .catalogo {
     grid-gap: 1rem 1rem;
-    grid-template-areas: "peques" "puma"   "colorido" "pomposo" "tigre" "empoderado"  "sofisticado"; }
+    grid-template-areas: "peques" "puma" "colorido" "pomposo" "tigre" "empoderado" "sofisticado"; }
     .main-catalogo .catalogo .peques img {
       width: 20rem; }
   .main-catalogo h1 {
     font-size: 3rem;
     margin-bottom: 4rem; }
+  .main-catalogo .info-bajada p {
+    width: 100%; }
   /*------------FOOTER--------------*/
   footer .footer-cont .linea {
     width: 20%; }
   /*------------CONTACTO--------------*/
   .cont-Nom-ape {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center; }
   .contacto textarea {
     width: 18rem; } }
@@ -716,4 +737,6 @@ button {
 
 @media (max-width: 320px) {
   .main-index .portada {
-    background-position: top 24rem right -2.5rem; } }
+    background-position: top 24rem right -2.5rem; }
+  .main-index .bajada {
+    font-size: 2rem; } }

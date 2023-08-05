@@ -5,14 +5,18 @@
     .main-index {
         padding-top: 2rem;
 
-        .portada {
+        .info-bajada {
+            p {
+                width: 70%;
+            }
+        }
 
+        .portada {
             h1 {
                 font-size: 4rem;
             }
 
             .intro {
-
                 align-items: center;
                 padding: 1rem 0rem;
 
@@ -22,8 +26,6 @@
                 }
             }
         }
-
-
 
         .michis {
             padding: 2rem 0.5rem 3rem 0.5rem;
@@ -36,9 +38,7 @@
                     width: 85%;
                 }
             }
-
         }
-
 
         .bajada {
             padding: 2rem 0 1rem 0;
@@ -61,8 +61,6 @@
         }
     }
 
-
-
     /*------------PUBLICAR--------------*/
     .publicar {
         h1 {
@@ -74,23 +72,15 @@
         }
     }
 
-
-
     .cont-img img {
         width: 80%;
     }
-
-
 
     /*------------CONTACTO--------------*/
     .contacto {
         img {
             display: none;
         }
-
-
-
-
 
         .cont-form {
             width: 100%;
@@ -113,7 +103,6 @@
                 font-size: medium;
             }
 
-
         }
 
     }
@@ -125,6 +114,14 @@
     }
 
     /*------------CATALOGO--------------*/
+    .main-catalogo {
+        .info-bajada {
+            p {
+                width: 85%;
+            }
+        }
+    }
+
     .catalogo {
         display: grid;
         grid-gap: 3rem 7rem;
@@ -136,34 +133,28 @@
             "pomposo tigre"
             "empoderado sofisticado";
 
-            .puma img {
-                width: 15rem;
-            }
-        
-            .colorido img {
-                width: 12rem;
-            }
-        
-        
-        
-            .pomposo img {
-                width: 23rem;
-            }
-        
-        
-        
-            .tigre img {
-                width: 13rem;
-            }
-        
-        
-            .empoderado img {
-                width: 15rem;
-            }
-        
-        
-            .sofisticado img {
-                width: 18rem;
-            }
+        .puma img {
+            width: 15rem;
+        }
+
+        .colorido img {
+            width: 12rem;
+        }
+
+        .pomposo img {
+            width: 23rem;
+        }
+
+        .tigre img {
+            width: 13rem;
+        }
+
+        .empoderado img {
+            width: 15rem;
+        }
+
+        .sofisticado img {
+            width: 18rem;
+        }
     }
 }

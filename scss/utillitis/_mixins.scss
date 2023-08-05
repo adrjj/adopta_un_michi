@@ -8,11 +8,9 @@
 
 }
 
-@mixin estilo-parrafo{
-    
-      
-        color: $color-texto-principal;
-        text-align: justify;
-        padding: 0 10px;
-    
+@mixin estilo-parrafo {
+    color: $color-texto-principal;
+    text-align: justify;
+    padding: 0 10px;
+
 }

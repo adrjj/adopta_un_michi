@@ -1,20 +1,21 @@
-%titulo{
+%titulo {
     color: $color-texto-principal;
     font-weight: 900;
     text-shadow: 10px 1px 10px rgb(30, 1, 36);
 }
-%titulo-principal{
+
+%titulo-principal {
     -webkit-background-clip: text;
-    background-image: linear-gradient(to left, #e61476, #c841f1, #343fdb,#34c8db, #2ecc71,#34c8db,#343fdb,#c841f1, #e61476);  
-    color: transparent;    
-    background-clip: text; 
+    background-image: linear-gradient(to left, #e61476, #c841f1, #343fdb, #34c8db, #2ecc71, #34c8db, #343fdb, #c841f1, #e61476);
+    color: transparent;
+    background-clip: text;
     font-weight: 900;
-    animation: color 10s linear infinite ;
-    background-size:500%; 
-    transition-timing-function:cubic-bezier(.17,.67,.86,.15);
-    
-    
+    animation: color 10s linear infinite;
+    background-size: 500%;
+    transition-timing-function: cubic-bezier(.17, .67, .86, .15);
+
 }
+
 @keyframes color {
     from {
         background-position: 0% 50%;

@@ -1,59 +1,54 @@
 @media (max-width:680px) {
 
     /*------------CATALOGO--------------*/
-   
-   .main-catalogo{
-    h1{
-        font-size: 4rem;
-    }
 
-    .catalogo {
-        grid-gap: 3rem 1rem;
-        a {
-            width: 200px;
-            height: 334px;
+    .main-catalogo {
+        h1 {
+            font-size: 4rem;
         }
-        h4 {
-            font-size: 1.5rem;
-            text-align: center;
+
+        .catalogo {
+            grid-gap: 3rem 1rem;
+
+            a {
+                width: 200px;
+                height: 334px;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .peques img {
+                width: 25rem;
+            }
+
+            .puma img {
+                width: 10rem;
+            }
+
+            .colorido img {
+                width: 8rem;
+            }
+
+            .pomposo img {
+                width: 15rem;
+            }
+
+            .tigre img {
+                width: 9rem;
+            }
+
+            .empoderado img {
+                width: 10rem;
+            }
+
+            .sofisticado img {
+                width: 13rem;
+            }
+
         }
-        .peques img{
-    width: 25rem;
+
+    }
 }
-    .puma img {
-        width: 10rem;
-    }
-
-    .colorido img {
-        width: 8rem;
-    }
-
-
-
-    .pomposo img {
-        width: 15rem;
-    }
-
-
-
-    .tigre img {
-        width: 9rem;
-    }
-
-
-    .empoderado img {
-        width: 10rem;
-    }
-
-
-    .sofisticado img {
-        width: 13rem;
-    }
-
-}
-
-    }
-   }
-   
-   
-

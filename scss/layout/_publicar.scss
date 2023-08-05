@@ -1,15 +1,10 @@
 /*------------html PUBLICAR---------------*/
-
 .publicar {
-    background: rgb(186,215,233);
-background: radial-gradient(circle, rgba(186,215,233,1) 4%, rgba(190,209,235,1) 37%, rgba(229,154,249,0.9948354341736695) 69%);
-
-display: flex;
+    background: rgb(186, 215, 233);
+    background: radial-gradient(circle, rgba(186, 215, 233, 1) 4%, rgba(190, 209, 235, 1) 37%, rgba(229, 154, 249, 0.9948354341736695) 69%);
+    display: flex;
     padding: 3rem 0.5rem 1rem 0.5rem;
-
-
 }
-
 
 .cont-img {
     width: 50%;
@@ -18,13 +13,10 @@ display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20rem;
-
     animation: gato 10s infinite;
-
 
     @keyframes gato {
 
@@ -53,22 +45,13 @@ display: flex;
             background-image: url("../assets/img/publicaiones/publicar.png");
         }
     }
-
-
-
-
-
-
-
 }
-
-
 
 .publicar {
     h1 {
         font-size: 5rem;
         font-weight: 700;
-        color:#301E67;
+        color: #301E67;
     }
 
     p {
@@ -78,19 +61,15 @@ display: flex;
     }
 }
 
-
-
 .info-publ {
     display: flex;
     flex-direction: column;
     width: 25rem;
     align-items: center;
     grid-row-gap: 1rem;
-b{
-    color:blueviolet
-}
-}
+    margin-bottom: 5rem;
 
-/*.boton-principal{
-    box-shadow: 0.5rem 0.5rem 0.5rem #031407b8;
-}*/
+    b {
+        color: blueviolet;
+    }
+}

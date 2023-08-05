@@ -4,18 +4,20 @@
 
 .cont-form {
     width: 35%;
+
     h1 {
         font-size: 4rem;
         font-weight: 400;
         color: #C045EB;
         margin-bottom: 1rem;
-    
+
     }
 }
 
 .contacto {
     background-color: #FBF7F6;
     display: flex;
+
     img {
         transform: scaleX(-1);
     }
@@ -64,6 +66,7 @@ label {
     font-size: 1rem;
     color: #c045eb;
     background-color: #FBF7F6;
+    margin-top: 1.5rem;
 }
 
 button {
@@ -77,6 +80,7 @@ button {
 }
 
 .con-btn {
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
 }

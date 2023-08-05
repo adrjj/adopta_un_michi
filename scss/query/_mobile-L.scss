@@ -3,6 +3,15 @@
     /*------------INDEX--------------*/
     .main-index {
 
+        .info-bajada {
+            p {
+                width: 100%;
+            }
+        }
+
+        .bajada {
+            font-size: 3rem;
+        }
 
         .portada {
             background-size: 65rem;
@@ -11,7 +20,6 @@
                 font-size: 2.5rem;
             }
 
-
         }
 
         .banner {
@@ -19,33 +27,41 @@
 
         }
     }
-     /*------------CATALOGO--------------*/
-     .main-catalogo{
+
+    /*------------CATALOGO--------------*/
+    .main-catalogo {
         .catalogo {
             grid-gap: 1rem 1rem;
             grid-template-areas:
                 "peques"
-                "puma"  
+                "puma"
                 "colorido"
                 "pomposo"
                 "tigre"
-                "empoderado" 
+                "empoderado"
                 "sofisticado";
-                .peques img {
-                    width: 20rem;
-                }
+
+            .peques img {
+                width: 20rem;
+            }
         }
-        h1{
+
+        h1 {
             font-size: 3rem;
             margin-bottom: 4rem;
         }
-    
-    
-}
- /*------------FOOTER--------------*/
+
+
+        .info-bajada {
+            p {
+                width: 100%;
+            }
+        }
+
+    }
+
+    /*------------FOOTER--------------*/
     footer {
-
-
         .footer-cont {
             .linea {
                 width: 20%;
@@ -53,14 +69,15 @@
         }
     }
 
-     /*------------CONTACTO--------------*/
-.cont-Nom-ape {
-   
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-}
-.contacto textarea {
-    width: 18rem;
-}
+    /*------------CONTACTO--------------*/
+    .cont-Nom-ape {
+
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .contacto textarea {
+        width: 18rem;
+    }
 }
